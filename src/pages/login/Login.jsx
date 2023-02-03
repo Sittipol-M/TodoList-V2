@@ -5,21 +5,23 @@ import { faUser, faLock } from "@fortawesome/free-solid-svg-icons";
 const Login = () => {
   return (
     <div className="loginContainer">
-      <div className="loginImage behind"></div>
-      <div className="loginForm front">
+      <div className="loginForm">
         <div className="loginTitle">
-          <p>Login</p>
+          <p>Sign In</p>
         </div>
-        <div className="loginInput">
+        <form className="loginInput">
           <div className="loginUsername">
             <FontAwesomeIcon className="icon" icon={faUser} />
-            <input type="" name="" value="" placeholder="username" />
+            <input type="text" name="username" placeholder="username" />
           </div>
           <div className="loginPassword">
             <FontAwesomeIcon className="icon" icon={faLock} />
-            <input type="" name="" value="" placeholder="password" />
+            <input type="password" name="password" placeholder="password" />
           </div>
-        </div>
+          <div>
+            <button type="submit">Login</button>
+          </div>
+        </form>
       </div>
     </div>
   );
